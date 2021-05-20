@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "STM32MP1 Linux",
+            "includePath": [
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/subprojects/libyggdrasil/Inc"
+            ],
+            "defines": [],
+            "compilerPath": "arm-linux-g++",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++20",
+            "intelliSenseMode": "gcc-arm"
+        }
+    ],
+    "version": 4
+}
