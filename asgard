@@ -1,0 +1,15 @@
+[binaries]
+c = '/opt/yggdrasil/asgard/bin/arm-none-linux-gnueabihf-gcc'
+cpp = '/opt/yggdrasil/asgard/bin/arm-none-linux-gnueabihf-g++'
+ar = '/opt/yggdrasil/asgard/bin/arm-none-linux-gnueabihf-ar'
+strip = '/opt/yggdrasil/asgard/bin/arm-none-linux-gnueabihf-strip'
+
+[properties]
+needs_exe_wrapper = true
+sys_root = '/opt/yggdrasil/asgard/sysroot'
+
+[host_machine]
+system = 'linux'
+cpu_family ='arm'
+cpu = ''
+endian = 'little'

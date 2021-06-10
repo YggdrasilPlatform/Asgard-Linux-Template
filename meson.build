@@ -5,8 +5,11 @@
         version: '1.0.0'
     )
 
+c_args = [ '-DBOARD=ASGARD' ]
+cpp_args = [ ] + c_args
+
 # Make sure the project gets cross compiled
-    assert(meson.is_cross_build(), 'This project can only be cross-compiled. Make sure to call meson with the "--cross-file=stm32mp1" option!')
+    assert(meson.is_cross_build(), 'This project can only be cross-compiled. Make sure to call meson with the "--cross-file=asgard" option!')
 
 
 # Available portlib libraries 
@@ -17,6 +20,7 @@
     linux_headers = sysroot + '/usr/include'
 
     libyggdrasil = subproject('libyggdrasil').get_variable('dep')
+
 
 
 # Source files and include directories
@@ -32,6 +36,8 @@
         'template.elf',
         source_files,
         native: false,
+        c_args: c_args,
+        cpp_args: cpp_args,
         name_prefix: '',
         dependencies: [ libstdcpp, libyggdrasil ],
         include_directories: include_dirs
