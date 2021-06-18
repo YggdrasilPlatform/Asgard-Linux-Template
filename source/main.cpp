@@ -1,8 +1,10 @@
 #include <iostream>
 
-#define BOARD ASGARD
+#define YGGDRASIL_USE_C_INTERFACE
 #include <yggdrasil.h>
 
 int main() {
-	std::cout << "Hello STM32MP1!" << std::endl;
+
+	std::cout << "Hello Asgard!" << std::endl;
+
 }

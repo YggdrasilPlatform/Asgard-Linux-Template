@@ -5,7 +5,7 @@
         version: '1.0.0'
     )
 
-c_args = [ '-DBOARD=ASGARD' ]
+c_args = [ '-DBOARD=ASGARD', '-DYGGDRASIL_PERIPHERAL_DEFS' ]
 cpp_args = [ ] + c_args
 
 # Make sure the project gets cross compiled
